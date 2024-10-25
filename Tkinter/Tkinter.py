@@ -17,7 +17,7 @@ def salvar_dados():
 
     if nome and idade and email and cidade:
         try:
-            idade = int(idade)  # Tenta converter a idade para inteiro para garantir que seja um número
+            idade = int(idade) 
 
 
             df = pd.DataFrame([[nome, idade, email, cidade]], columns=["Nome", "Idade", "E-mail", "Cidade"])
