@@ -107,6 +107,7 @@ from sklearn.model_selection import ShuffleSplit
 
 X, y = load_iris(return_X_y=True) 
 ss = ShuffleSplit(n_splits=5, test_size=0.2) 
+
 for train_index, test_index in ss.split(X): 
   print('Train:', train_index, 'Test:', test_index) 
 
@@ -118,8 +119,31 @@ from sklearn.model_selection import LeaveOneOut
 
 X, y = load_iris(return_X_y=True) 
 loo = LeaveOneOut() 
+
 for train_index, test_index in loo.split(X):
   print('Train:', train_index, 'Test:', test_index) 
+
+
+
+
+
+
+
+from sklearn.model_selection import TimeSeriesSplit 
+
+X = np.arrange(10).reshape((10, 1)) 
+tscv = TimeSeriesSplit(n_splits=3) 
+
+for train_index, test_index in tscv.split(X): 
+  print('Train:', train_index, 'Test:', test_index) 
+
+
+
+
+
+
+
+
 
 
 
