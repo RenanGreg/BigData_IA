@@ -136,16 +136,3 @@ tscv = TimeSeriesSplit(n_splits=3)
 
 for train_index, test_index in tscv.split(X): 
   print('Train:', train_index, 'Test:', test_index) 
-
-
-
-
-
-
-
-
-
-
-
-
-
