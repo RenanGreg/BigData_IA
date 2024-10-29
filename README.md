@@ -40,3 +40,8 @@ Funcionalidades:
 -Análise e agregação de dados.
 -Leitura e escrita de dados em diversos formatos
 (CSV, Excel, SQL e etc)
+
+
+
+
+O Scikit-Learn é uma biblioteca em Python voltada para aprendizado de maquina, que fornece diversas ferramentas para modelagem preditiva e analise de dados. Ela esta organizada em subpacotes que agrupa diferentes funcionalidades 
